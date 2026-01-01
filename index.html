@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>glowNeva</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="logo">glowNeva</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#collections">Collections</a></li>
+            <li><a href="#review">Review</a></li>
+             <li><a href="#feedback">Feedback</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+          <div class="nav-icons">
+    <input type="text" placeholder="Search..." id="searchBar">
+    <button id="searchBtn">🔍</button>
+      <div class="cart" id="cartBtn">
+    🛒 <span id="cartCount">0</span>
+
+    <!-- CART DROPDOWN -->
+<div class="cart-dropdown" id="cartDropdown">
+    <h4>Cart Items</h4>
+    <ul id="cartItemsList">
+        <!-- Items will be added here dynamically -->
+    </ul>
+    <p><strong>Total:</strong> ₹ <span id="cartTotal">0</span></p>
+      <!-- Coupon -->
+    <div class="coupon-box">
+        <input type="text" id="couponInput" placeholder="Enter coupon code">
+        <button id="applyCouponBtn">Apply</button>
+        <p id="couponMessage" style="color: green; font-size: 14px;"></p>
+        </div>
+        </div> 
+        </div>
+        </div>
+     </nav>
+
+    <!-- HOME SECTION -->
+    <section id="home" class="home-section">
+        <div class="home-text">
+            <h1>Natural beauty made<br>Simple~~</h1>
+            <p>Discover glowNeva’s collection of simplified skincare.<br>
+            Pure ingredients, radiant results.</p>
+            <a href="#collections" class="button">Collections</a>
+
+            <div class="stats">
+                <div class="card"> <h3>15+</h3> Facial formulated </div>
+                <div class="card"> <h3>25+</h3> Experimented results </div>
+                <div class="card"> <h3>100%</h3> Herbal Cream Formula </div>
+            </div>
+        </div>
+
+        <div class="home-img">
+            <img src="https://media.istockphoto.com/id/2165317742/photo/beauty-portrait-of-a-young-beautiful-asian-woman.jpg?s=612x612&w=0&k=20&c=Gi2j-Q8HTnrLBj_InFB8qhUqWAs8t4kpR4Gh12OACf8=" alt="model">
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="about-section">
+        <h1>About</h1>
+        <h2>The glowNeva Difference</h2>
+        <p>We believe in the power of natural ingredients to create skincare that truly nourishes your skin.</p>
+
+        <div class="about-cards">
+            <div class="about-card">
+                <h3>Gentle & Effective</h3>
+                <p>Our formulations are designed to cleanse and nourish without stripping your skin’s natural barrier.</p>
+            </div>
+
+            <div class="about-card">
+                <h3>Handcrafted Quality</h3>
+                <p>Every serum and oil is carefully handmade in small batches to ensure freshness.</p>
+            </div>
+
+            <div class="about-card">
+                <h3>100% Natural</h3>
+                <p>We use only pure, natural ingredients with no synthetic chemicals.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- COLLECTION SECTION -->
+   <section id="collections" class="collections-section">
+    <h1>Collections</h1>
+    <p>We believe in the power of natural ingredients to create skincare that truly nourishes your skin.</p>
+
+    <!-- REGULAR PRODUCTS -->
+    <h2 class="sub-heading">Our Products</h2>
+    <div class="product-grid">
+
+        <div class="product">
+            <img src="https://www.clarinsusa.com/dw/image/v2/AAFS_PRD/on/demandware.static/-/Sites-clarins-master-products/en_US/dw19cd2c9d/original/80083849_original_original_1.jpg" alt="Facial Oil">
+            <h3>Facial Oil</h3>
+            <p>₹599</p>
+             <button data-price="599">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="https://www.theoriginote.com/cdn/shop/files/1_d43436e0-176f-421d-87bf-3b6d070a3fb1.jpg" alt="Moisturizer">
+            <h3>Moisturizer</h3>
+            <p>₹890</p>
+            <button data-price="890">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="https://cerulean.in/cdn/shop/products/Esenca5954_1.jpg" alt="Cleanser">
+            <h3>Cleanser</h3>
+            <p>₹1182</p>
+            <button data-price="1182">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="https://nutrinormwellness.com/cdn/shop/files/sunscreen-lotion-spf-30-6.webp" alt="Sunscreen">
+            <h3>Sunscreen</h3>
+            <p>₹750</p>
+            <button data-price="750">Add to Cart</button>
+        </div>
+    </div>
+
+    <!-- ⭐ BEST SELLERS SECTION -->
+    <h2 class="sub-heading">Best Sellers</h2>
+    <div class="product-grid">
+
+        <div class="product">
+            <img src="https://m.media-amazon.com/images/I/51XhCC0aiJL.AC_UF1000,1000_QL80.jpg" alt="Kumkumadi Serum">
+            <h3>Kumkumadi Glow Serum</h3>
+            <p>₹1,299</p>
+            <button data-price="1299">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="https://tiimg.tistatic.com/fp/1/007/507/instant-glow-herbal-face-scrub-net-vol-150-g-for-all-types-of-skin-236.jpg" alt="Face Scrub">
+            <h3>Herbal Face Scrub</h3>
+            <p>₹499</p>
+            <button data-price="499">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="https://s3.images-iherb.com/frh/frh13961/l/8.jpg" alt="Rose Toner">
+            <h3>Rose Hydration Toner</h3>
+            <p>₹699</p>
+           <button data-price="699">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="https://smytten-image.gumlet.io/discover_product/1686140732_DMSC0167AB19.jpg" alt="Night Gel">
+            <h3>Green Tea Night Gel</h3>
+            <p>₹849</p>
+             <button data-price="849">Add to Cart</button>
+        </div>
+    </div>
+</section>
+
+
+    <!-- REVIEW SECTION -->
+    <section id="review" class="review-section">
+        <h1>Review</h1>
+        <h3>What our customers say</h3>
+
+        <div class="review-grid">
+
+            <div class="review-card">
+                ⭐⭐⭐⭐⭐
+                <p>"My skin looks brighter and feels smoother."</p>
+                <h4>Samaira Rai</h4>
+            </div>
+
+            <div class="review-card">
+                ⭐⭐⭐⭐⭐
+                <p>"Finally found natural products that actually work!"</p>
+                <h4>Priya Sharma</h4>
+            </div>
+
+            <div class="review-card">
+                ⭐⭐⭐⭐⭐
+                <p>"Helped fade my dark spots and made my skin plump."</p>
+                <h4>Neha Gupta</h4>
+            </div>
+
+            <div class="review-card">
+                ⭐⭐⭐⭐⭐
+                <p>"Perfect for humid weather, lightweight and non-greasy."</p>
+                <h4>Rohan Verma</h4>
+            </div>
+
+        </div>
+    </section>
+      <!-- FEEDBACK SECTION -->
+<section id="feedback" class="feedback-section">
+    <h1>Give Your Feedback</h1>
+    <p>We’d love to hear your thoughts on our products!</p>
+
+    <div class="feedback-form">
+        <!-- Star Rating -->
+        <div class="star-rating">
+            <span data-value="1">⭐</span>
+            <span data-value="2">⭐</span>
+            <span data-value="3">⭐</span>
+            <span data-value="4">⭐</span>
+            <span data-value="5">⭐</span>
+        </div>
+
+        <!-- Feedback Textarea -->
+        <textarea id="feedbackText" placeholder="Write your feedback here..."></textarea>
+
+        <!-- Submit Button -->
+        <button id="submitFeedback">Submit Feedback</button>
+    </div>
+</section>
+
+   <!-- CONTACT SECTION -->
+<section id="contact" class="contact-section">
+    <h1>Contact Us</h1>
+    <img src="https://1000logos.net/wp-content/uploads/2024/08/GE-Vernova-Emblem.png" class="logo-img">
+
+    <p>Handcrafted natural serums and facial oils.<br>
+    Made with love, made for you.</p>
+    <div class="contact-details">
+    <p><strong>Email:</strong>
+        <a href="mailto:support@glowneva.com">support@glowneva.com</a>
+    </p>
+    <p><strong>Phone:</strong>
+        <a href="tel:+919876543210">+91 98765 43210</a>
+    </p>
+</div>
+
+
+    <div class="subscribe-box">
+        <h3>Subscribe to our Newsletter</h3>
+        <p>Get updates on new products & exclusive offers.</p>
+
+        <div class="subscribe-inputs">
+            <input type="email" id="emailInput" placeholder="Enter your email">
+            <button id="subscribeBtn">Subscribe</button>
+        </div>
+    </div>
+
+    <div class="social-links">
+        <img src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png" class="icon">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" class="icon">
+    </div>
+</section>
+
+
+
+    <script src="script.js"></script>
+    <div class="cart-overlay" id="cartOverlay"></div>
+
+</body>
+</html>
